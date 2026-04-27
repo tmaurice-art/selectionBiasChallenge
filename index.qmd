@@ -135,7 +135,7 @@ from step1_prepare_image import prepare_image
 
 # Load and prepare the image
 # CHANGE THIS to use your own image!
-img_path = 'fleischhacker.jpg'  # Example image - replace with your own image
+img_path = 'headshot.png'
 gray_image = prepare_image(img_path, max_size=512)
 
 # Display the prepared image
