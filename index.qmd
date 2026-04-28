@@ -258,6 +258,14 @@ print(f"  - Use mid_tone_center around {tonal_stats['mean']:.2f} to emphasize av
 ```
 
 ## Step 4: Create Block Letter "S" ⚠️ **YOUR TASK**
+```{python}
+create_block_letter_s(height: int, width: int, letter: str = "S", font_size_ratio: float = 0.9) -> np.ndarray, font_size_ratio: float = 0.9 -> float = 0.9
+
+height: int
+width: int
+letter: str = "S"
+font_size_ratio: float = 0.9
+```
 
 ::: {.callout-warning}
 ## 🎯 Your Challenge: Write `step4_create_block_letter.py`
