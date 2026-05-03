@@ -12,6 +12,7 @@ execute:
 #| label: step1-prepare
 #| echo: false
 #| fig-cap: "Original image prepared for processing"
+#| fig-show: hide
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -35,6 +36,7 @@ plt.show()
 #| label: step2-stipple
 #| echo: false
 #| fig-cap: "Blue noise stippling pattern"
+#| fig-show: hide
 #| message: false
 #| warning: false
 
@@ -66,6 +68,7 @@ plt.show()
 #| label: step3-tonal
 #| echo: false
 #| fig-cap: "Box-averaged tonal analysis showing brightness distribution"
+#| fig-show: hide
 
 from step3_create_tonal import create_tonal
 import matplotlib.pyplot as plt
@@ -114,6 +117,7 @@ plt.show()
 #| label: step4-block-letter
 #| echo: false
 #| fig-cap: "Block letter S representing selection bias"
+#| fig-show: hide
 
 import matplotlib.pyplot as plt
 from step4_create_block_letter import create_block_letter_s
@@ -138,6 +142,7 @@ plt.show()
 #| label: step5-masked
 #| echo: false
 #| fig-cap: "Masked stippled image showing selection bias effect"
+#| fig-show: hide
 
 import matplotlib.pyplot as plt
 from step5_create_masked import create_masked_stipple
