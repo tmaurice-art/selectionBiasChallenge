@@ -65,15 +65,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="example-output" class="level2">
-<h2 class="anchored" data-anchor-id="example-output">Example Output</h2>
-<p>Here’s what your final meme should look like:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="statistics_meme.png" class="img-fluid figure-img"></p>
-<figcaption>Four-panel statistics meme showing Reality (original image), Your Model (stippled version), Selection Bias (letter S), and Estimate (masked stippled image)</figcaption>
-</figure>
-</div>
 <div id="cell-step1-prepare" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-stdout">
 <pre><code>Image size: (400, 300) (no resizing needed)
@@ -120,19 +111,6 @@ Tone range: [0.143, 0.925]</code></pre>
 </figure>
 </div>
 </div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-📊 Tonal Statistics for Parameter Tuning:
-  Mean brightness: 0.640
-  Standard deviation: 0.181
-  Brightness range: [0.143, 0.925]
-
-💡 Tuning Tips:
-  - If mean &lt; 0.4: Image is dark, consider lowering extreme_threshold_low
-  - If mean &gt; 0.6: Image is light, consider raising extreme_threshold_high
-  - If std &gt; 0.2: High contrast, may need stronger extreme_downweight
-  - Use mid_tone_center around 0.64 to emphasize average tones</code></pre>
-</div>
 </div>
 <div id="cell-step4-block-letter" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
@@ -167,13 +145,9 @@ Tone range: [0.143, 0.925]</code></pre>
 <section id="template-for-final-section" class="level3">
 <h3 class="anchored" data-anchor-id="template-for-final-section">Template for Final Section</h3>
 </section>
-<section id="example-explanation" class="level3">
-<h3 class="anchored" data-anchor-id="example-explanation">Example Explanation</h3>
-<p>Your explanation should be 1-3 sentences. Here’s an example:</p>
-<blockquote class="blockquote">
+<section id="explanation" class="level3">
+<h3 class="anchored" data-anchor-id="explanation">Explanation:</h3>
 <p>This meme is selection bias in picture form. When data goes missing in a pattern, your take on reality gets warped. The original image (Reality) is the whole population, and the stippled version (Your Model) is what you actually managed to observe. If the missingness carves out that curvy “S” shape, your result stops being representative—and you end up confidently describing a world you didn’t fully measure.</p>
-</blockquote>
-</section>
 </section>
 
 </main>

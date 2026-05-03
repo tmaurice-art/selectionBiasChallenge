@@ -7,11 +7,6 @@ execute:
   echo: false
   eval: true
 ---
-## Example Output
-
-Here's what your final meme should look like:
-
-![Four-panel statistics meme showing Reality (original image), Your Model (stippled version), Selection Bias (letter S), and Estimate (masked stippled image)](statistics_meme.png)
 
 ```{python}
 #| label: step1-prepare
@@ -113,19 +108,7 @@ for i in range(grid_rows):
 
 plt.tight_layout()
 plt.show()
-
-# Print key statistics for parameter tuning
-print(f"\n📊 Tonal Statistics for Parameter Tuning:")
-print(f"  Mean brightness: {tonal_stats['mean']:.3f}")
-print(f"  Standard deviation: {tonal_stats['std']:.3f}")
-print(f"  Brightness range: [{tonal_stats['min']:.3f}, {tonal_stats['max']:.3f}]")
-print(f"\n💡 Tuning Tips:")
-print(f"  - If mean < 0.4: Image is dark, consider lowering extreme_threshold_low")
-print(f"  - If mean > 0.6: Image is light, consider raising extreme_threshold_high")
-print(f"  - If std > 0.2: High contrast, may need stronger extreme_downweight")
-print(f"  - Use mid_tone_center around {tonal_stats['mean']:.2f} to emphasize average tones")
 ```
-
 
 ```{python}
 #| label: step4-block-letter
@@ -178,7 +161,6 @@ plt.tight_layout()
 plt.show()
 ```
 
-
 ```{python}
 #| label: create-final-meme
 #| echo: false
@@ -194,7 +176,7 @@ create_statistics_meme(
     masked_stipple_img=masked_stipple,
     output_path="my_statistics_meme.png",
     dpi=150,
-    background_color="white",
+    background_color="yellow",
 )
 
 display(Image("my_statistics_meme.png"))
@@ -215,9 +197,6 @@ display(Image("my_statistics_meme.png"))
 # display(Image("my_statistics_meme.png"))
 ```
 
-### Example Explanation
-
-Your explanation should be 1-3 sentences. Here's an example:
-
-> This meme is selection bias in picture form. When data goes missing in a pattern, your take on reality gets warped. The original image (Reality) is the whole population, and the stippled version (Your Model) is what you actually managed to observe. If the missingness carves out that curvy “S” shape, your result stops being representative—and you end up confidently describing a world you didn’t fully measure.
+### Explanation:
+This meme is selection bias in picture form. When data goes missing in a pattern, your take on reality gets warped. The original image (Reality) is the whole population, and the stippled version (Your Model) is what you actually managed to observe. If the missingness carves out that curvy “S” shape, your result stops being representative—and you end up confidently describing a world you didn’t fully measure.
 
